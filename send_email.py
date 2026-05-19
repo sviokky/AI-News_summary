@@ -8,7 +8,7 @@ def send_email(message):
     host = "smtp.gmail.com"
     port = 465
 
-    username = "zviadd97@gmail.com"
+    username = os.getenv("USERNAME")
     password = os.getenv("EMAIL_PASSWORD")
 
     receiver = "zviadd97@gmail.com"
